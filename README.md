@@ -7,16 +7,16 @@ This project visualizes how a 2D linear transformation acts on the standard basi
 The script:
 
 - defines the standard basis vectors
-  - \( e_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \)
-  - \( e_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \)
+  - $e_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$
+  - $e_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$
 - defines a target vector
-  - \( v = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \)
+  - $v = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$
 - defines a transformation matrix
-  - \( A = \begin{bmatrix} 1.5 & 0.5 \\ -0.5 & 1.2 \end{bmatrix} \)
+  - $A = \begin{bmatrix} 1.5 & 0.5 \\ -0.5 & 1.2 \end{bmatrix}$
 - computes where the basis vectors and target vector land after transformation
-  - \( A e_1 = \begin{bmatrix} 1.5 \\ -0.5 \end{bmatrix} \)
-  - \( A e_2 = \begin{bmatrix} 0.5 \\ 1.2 \end{bmatrix} \)
-  - \( Av = \begin{bmatrix} 3.5 \\ 0.2 \end{bmatrix} \)
+  - $Ae_1 = \begin{bmatrix} 1.5 \\ -0.5 \end{bmatrix}$
+  - $Ae_2 = \begin{bmatrix} 0.5 \\ 1.2 \end{bmatrix}$
+  - $Av = \begin{bmatrix} 3.5 \\ 0.2 \end{bmatrix}$
 - draws a Matplotlib figure with two panels:
   - original space
   - transformed space
@@ -27,39 +27,39 @@ A linear transformation in 2D is represented by a 2x2 matrix. Applying the matri
 
 For this example:
 
-\[
+$$
 A = \begin{bmatrix} 1.5 & 0.5 \\ -0.5 & 1.2 \end{bmatrix}, \quad
 v = \begin{bmatrix} 2 \\ 1 \end{bmatrix}
-\]
+$$
 
 The original vector can be written as a combination of the basis vectors:
 
-\[
+$$
 v = 2e_1 + 1e_2
-\]
+$$
 
 Applying the matrix gives:
 
-\[
+$$
 Av = 2Ae_1 + Ae_2
-\]
+$$
 
 And since:
 
-\[
+$$
 Ae_1 = \begin{bmatrix} 1.5 \\ -0.5 \end{bmatrix}, \quad
 Ae_2 = \begin{bmatrix} 0.5 \\ 1.2 \end{bmatrix}
-\]
+$$
 
 we get:
 
-\[
+$$
 Av = 2\begin{bmatrix} 1.5 \\ -0.5 \end{bmatrix}
 + \begin{bmatrix} 0.5 \\ 1.2 \end{bmatrix}
 = \begin{bmatrix} 3.5 \\ 0.2 \end{bmatrix}
-\]
+$$
 
-This is exactly what the script visualizes: the basis vectors and the vector \(v\) are shown before and after the transformation.
+This is exactly what the script visualizes: the basis vectors and the vector $v$ are shown before and after the transformation.
 
 ## How to run it
 
@@ -79,7 +79,7 @@ MPLBACKEND=Agg python3 vector_transform.py
 
 Running the script produces a two-panel Matplotlib plot:
 
-- left panel: original space with the standard basis vectors and vector \(v\)
+- left panel: original space with the standard basis vectors and vector $v$
 - right panel: transformed space showing the image of the basis vectors and transformed vector
 
 ![Vector transformation output](./vector_transform_output.png)
