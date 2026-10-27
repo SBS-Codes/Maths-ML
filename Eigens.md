@@ -26,8 +26,8 @@ For data with two features, the covariance matrix has the form
 $$
 \Sigma =
 \begin{bmatrix}
-\operatorname{Var}(x_1) & \operatorname{Cov}(x_1,x_2) \\
-\operatorname{Cov}(x_1,x_2) & \operatorname{Var}(x_2)
+\mathrm{Var}(x_1) & \mathrm{Cov}(x_1,x_2) \\
+\mathrm{Cov}(x_1,x_2) & \mathrm{Var}(x_2)
 \end{bmatrix}.
 $$
 
